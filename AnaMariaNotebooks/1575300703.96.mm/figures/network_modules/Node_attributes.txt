@@ -1,0 +1,44 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C00491	L-Cystine; L-Dicysteine; L-alpha-Diamino-beta-dithiolactic acid	0.198955734665	row11	E35
+C00217	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid	0.477805929686	row33	E334
+C00025	L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate	0.477805929686	row33	E334
+C00025	L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate	0.419228911641	row31	E334
+C00217	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid	0.419228911641	row31	E334
+C00025	L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate	0.299095988695	row25	E277
+C02238	5-Oxo-L-proline	0.419228911641	row31	E170
+C00450	2,3,4,5-Tetrahydropyridine-2-carboxylate; delta1-Piperideine-6-L-carboxylate	0.205398645719	row19	E91
+C00025	L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate	0.205398645719	row21	E109
+C00148	L-Proline; 2-Pyrrolidinecarboxylic acid	0.205398645719	row23	E443
+C05938	L-4-Hydroxyglutamate semialdehyde	0.419228911641	row31	E334
+C01879	5-Oxoproline; Pyroglutamic acid; 5-Pyrrolidone-2-carboxylic acid; Pyroglutamate; 5-Oxo-L-proline; L-Pyroglutamic acid; L-5-Pyrrolidone-2-carboxylic acid	0.419228911641	row31	E518
+C05100	3-Ureidoisobutyrate	0.656818566846	row36	E223
+dcsptn1crn	docosa-4,7,10,13,16-pentaenoyl carnitine	0.205398645719	row18	E121
+CE2061		0.205398645719	row20	E527
+C01879	5-Oxoproline; Pyroglutamic acid; 5-Pyrrolidone-2-carboxylic acid; Pyroglutamate; 5-Oxo-L-proline; L-Pyroglutamic acid; L-5-Pyrrolidone-2-carboxylic acid	0.205398645719	row21	E69
+C00763	D-Proline	0.205398645719	row23	E443
+tmndnccrn	Timnodonyl carnitine	0.205398645719	row24	E312
+C05938	L-4-Hydroxyglutamate semialdehyde	0.477805929686	row33	E334
+C04076	L-2-Aminoadipate 6-semialdehyde; 2-Aminoadipate 6-semialdehyde	0.205398645719	row19	E616
+C02946	4-Acetamidobutanoate; N4-Acetylaminobutanoate	0.205398645719	row19	E616
+tetpent6crn	tetracosapentaenoyl carnitine	0.023583390583	row3	E549
+C00302	DL-Glutamate; DL-Glutaminic acid; 2-Aminoglutaric acid; Glutamate	0.299095988695	row25	E583
+C04281	L-1-Pyrroline-3-hydroxy-5-carboxylate; 3-Hydroxy-L-1-pyrroline-5-carboxylate; (3R,5S)-1-Pyrroline-3-hydroxy-5-carboxylate	0.205398645719	row21	E69
+C02238	5-Oxo-L-proline	0.205398645719	row21	E69
+C00819	D-Glutamine; D-2-Aminoglutaramic acid	0.656818566846	row36	E223
+C04230	1-Acyl-sn-glycero-3-phosphocholine; 1-Acyl-sn-glycerol-3-phosphocholine; alpha-Acylglycerophosphocholine; 2-Lysolecithin; 2-Lysophosphatidylcholine; 1-Acylglycerophosphocholine	0.0289431228676	row7	E212
+C04281	L-1-Pyrroline-3-hydroxy-5-carboxylate; 3-Hydroxy-L-1-pyrroline-5-carboxylate; (3R,5S)-1-Pyrroline-3-hydroxy-5-carboxylate	0.419228911641	row31	E518
+tetpent3crn	tetracosapentaenoyl carnitine	0.023583390583	row3	E549
+C04092	delta1-Piperideine-2-carboxylate; 1,2-Didehydropiperidine-2-carboxylate	0.205398645719	row19	E91
+C04282	1-Pyrroline-4-hydroxy-2-carboxylate	0.205398645719	row21	E69
+C00302	DL-Glutamate; DL-Glutaminic acid; 2-Aminoglutaric acid; Glutamate	0.419228911641	row31	E250
+clpndcrn	clupanodonyl carnitine	0.205398645719	row18	E121
+C08261		0.299095988695	row26	E520
+C05938	L-4-Hydroxyglutamate semialdehyde	0.299095988695	row25	E277
+C04282	1-Pyrroline-4-hydroxy-2-carboxylate	0.419228911641	row31	E518
+c226crn	cervonyl carnitine	0.449132006663	row32	E603
+C05938	L-4-Hydroxyglutamate semialdehyde	0.205398645719	row21	E109
+C00217	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid	0.205398645719	row21	E109
+C00064	L-Glutamine; L-2-Aminoglutaramic acid	0.656818566846	row36	E223
+CE4788	acetamidopropanal	0.205398645719	row23	E443
+C03239	6-Amino-2-oxohexanoate; 2-Oxo-6-aminocaproate	0.205398645719	row19	E616
+C00217	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid	0.299095988695	row25	E277

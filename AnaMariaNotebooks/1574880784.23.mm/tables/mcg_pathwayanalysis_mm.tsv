@@ -1,0 +1,120 @@
+pathway	overlap_size	pathway_size	p-value	overlap_EmpiricalCompounds (id)	overlap_features (id)	overlap_features (name)
+Alkaloid biosynthesis II	5	9	0.0403327451475	E970,E258,E1021,E1988,E963	C06178,C12448/egme,C06178,C06178,C06178	1-Methylpyrrolinium$Ecgonine methyl ester; Methyl ecgonine/ecgonine methyl ester$1-Methylpyrrolinium$1-Methylpyrrolinium$1-Methylpyrrolinium
+Histidine metabolism	19	51	0.0482312410722	E414,E1762,E1832,E2012,E1608,E1153,E1726,E2059,E1564,E491,E357,E2057,E915,E2205,E1576,E611,E1621,E1140,E1379	C00439,C03680,C03680,C05130,C00439,C00388,C00217/C05938/C00025,C00217/C05938/C00025,C00785,C05828,C05130,C05828,C00026,C05130,C06486/C00386,C05828,C06486/C00386,C00785,C02229/C01888/C05665	N-Formimino-L-glutamate; N-Formimidoyl-L-glutamate$4-Imidazolone-5-propanoate; 4-Imidazolone-5-propionic acid; 4,5-Dihydro-4-oxo-5-imidazolepropanoate$4-Imidazolone-5-propanoate; 4-Imidazolone-5-propionic acid; 4,5-Dihydro-4-oxo-5-imidazolepropanoate$Imidazole-4-acetaldehyde; Imidazole acetaldehyde$N-Formimino-L-glutamate; N-Formimidoyl-L-glutamate$1H-Imidazole-4-ethanamine; Histamine; 2-(4-Imidazolyl)ethylamine$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$Urocanate; Urocanic acid$Methylimidazoleacetic acid; Tele-methylimidazoleacetic acid; 1-Methyl-4-imidazoleacetic acid; 1-Methylimidazole-4-acetate; Methylimidazoleacetate$Imidazole-4-acetaldehyde; Imidazole acetaldehyde$Methylimidazoleacetic acid; Tele-methylimidazoleacetic acid; 1-Methyl-4-imidazoleacetic acid; 1-Methylimidazole-4-acetate; Methylimidazoleacetate$2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid$Imidazole-4-acetaldehyde; Imidazole acetaldehyde$(6R)-6-(L-erythro-1,2-Dihydroxypropyl)-5,6,7,8-tetrahydro-4a-/Carnosine; Nalpha-(beta-alanyl)-L-histidine$Methylimidazoleacetic acid; Tele-methylimidazoleacetic acid; 1-Methyl-4-imidazoleacetic acid; 1-Methylimidazole-4-acetate; Methylimidazoleacetate$(6R)-6-(L-erythro-1,2-Dihydroxypropyl)-5,6,7,8-tetrahydro-4a-/Carnosine; Nalpha-(beta-alanyl)-L-histidine$Urocanate; Urocanic acid$3-Aminopropanal/Aminoacetone; 1-Amino-2-propanone/beta-Aminopropion aldehyde
+Biopterin metabolism	6	13	0.0614234097975	E582,E1337,E889,E2019,E460,E1110	,,CE2172,,,CE2172	$$$$$
+Linoleate metabolism	11	29	0.0786488530376	E1640,E398,E1802,E785,E2022,E908,E1939,E1192,E1363,E721,E608	,,,,,,,,,,	$$$$$$$$$$
+Pyrimidine metabolism	16	46	0.0915889421057	E1286,E1473,E1224,E1764,E1822,E89,E727,E1726,E2059,E219,E1430,E603,E775,E1099,E499,E1254	,,,,,,,C00217/C05938/C00025,C00217/C05938/C00025,,,,,,,	$$$$$$$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$$$$$$$
+Aminosugars metabolism	9	24	0.0981430131922	E1286,E925,E2191,E137,E1726,E2059,E1597,E2089,E1099	,,,,C00217/C05938/C00025,C00217/C05938/C00025,,,	$$$$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$$$
+Vitamin H (biotin) metabolism	3	6	0.102680447021	E1959,E815,E1541	,,	$$
+Lipoate metabolism	3	6	0.102680447021	E1959,E815,E1541	,,	$$
+Nitrogen metabolism	6	15	0.103016553231	E2059,E89,E1726,E1286,E1099,E1254	C00217/C05938/C00025,,C00217/C05938/C00025,,,	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$$$
+Tyrosine metabolism	34	115	0.179312662801	E418,E122,E1013,E2059,E1175,E1942,E1490,E1286,E1690,E524,E117,E2019,E1255,E83,E1099,E354,E1644,E889,E1378,E725,E2009,E1380,E1110,E915,E766,E1645,E984,E1861,E1726,E1258,E1205,E490,E1170,E186	C00547,,C02735/C00483,C00217/C05938/C00025,C00547,C05588,C05588,,,,C05588,,C05581,,,C05589/C00788,C03758,CE2172,,,CE5538,CE5538,CE2172,C00026,CE5536,C05589/C00788,C02735/C00483,C05581,C00217/C05938/C00025,CE5536,C00547,C03758,,	L-Noradrenaline; Noradrenaline; Norepinephrine; Arterenol; 4-[(1R)-2-Amino-1-hydroxyethyl]-1,2-benzenediol$$Phenylethanolamine; 2-Amino-1-phenylethanol/Tyramine; 2-(p-Hydroxyphenyl)ethylamine$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$L-Noradrenaline; Noradrenaline; Norepinephrine; Arterenol; 4-[(1R)-2-Amino-1-hydroxyethyl]-1,2-benzenediol$L-Metanephrine$L-Metanephrine$$$$L-Metanephrine$$3-Methoxy-4-hydroxyphenylacetaldehyde$$$L-Normetanephrine/L-Adrenaline; (R)-(-)-Adrenaline; (R)-(-)-Epinephrine; (R)-(-)-Epirenamine; (R)-(-)-Adnephrine; 4-[(1R)-1-Hydroxy-2-(methylamino)ethyl]-1,2-benzenediol$Dopamine; 4-(2-Aminoethyl)-1,2-benzenediol; 4-(2-Aminoethyl)benzene-1,2-diol; 3,4-Dihydroxyphenethylamine; 2-(3,4-Dihydroxyphenyl)ethylamine$$$$noradrenochrome$noradrenochrome$$2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid$adrenochrome$L-Normetanephrine/L-Adrenaline; (R)-(-)-Adrenaline; (R)-(-)-Epinephrine; (R)-(-)-Epirenamine; (R)-(-)-Adnephrine; 4-[(1R)-1-Hydroxy-2-(methylamino)ethyl]-1,2-benzenediol$Phenylethanolamine; 2-Amino-1-phenylethanol/Tyramine; 2-(p-Hydroxyphenyl)ethylamine$3-Methoxy-4-hydroxyphenylacetaldehyde$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$adrenochrome$L-Noradrenaline; Noradrenaline; Norepinephrine; Arterenol; 4-[(1R)-2-Amino-1-hydroxyethyl]-1,2-benzenediol$Dopamine; 4-(2-Aminoethyl)-1,2-benzenediol; 4-(2-Aminoethyl)benzene-1,2-diol; 3,4-Dihydroxyphenethylamine; 2-(3,4-Dihydroxyphenyl)ethylamine$$
+Vitamin B3 (nicotinate and nicotinamide) metabolism	7	22	0.194437442232	E1286,E1406,E1726,E2059,E736,E1099,E760	,,C00217/C05938/C00025,C00217/C05938/C00025,,,	$$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$$$
+Carnitine shuttle	2	5	0.196622132594	E1577,E1638	,	$
+Glycosphingolipid biosynthesis - globoseries	2	5	0.196622132594	E1597,E137	,	$
+Glycosphingolipid biosynthesis - ganglioseries	2	5	0.196622132594	E1597,E137	,	$
+Putative anti-Inflammatory metabolites formation from EPA	2	5	0.196622132594	E2059,E1726	C00217/C05938/C00025,C00217/C05938/C00025	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate
+Alanine and Aspartate Metabolism	8	26	0.213091336862	E1286,E1406,E89,E1726,E2059,E1099,E915,E1254	,,,C00217/C05938/C00025,C00217/C05938/C00025,,C00026,	$$$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$$2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid$
+Lysine metabolism	15	51	0.22636753214	E509,E1959,E2074,E1643,E229,E1541,E2059,E465,E72,E913,E1768,E915,E1726,E2068,E815	,,C05936,,,,C00217/C05938/C00025,,,C05936,,C00026,C00217/C05938/C00025,,	$$N4-Acetylaminobutanal$$$$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$$$N4-Acetylaminobutanal$$2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$$
+Fatty Acid Metabolism	1	2	0.233509789093	E1544		
+Fatty acid oxidation, peroxisome	1	2	0.233509789093	E915	C00026	2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid
+Vitamin B1 (thiamin) metabolism	1	2	0.233509789093	E915	C00026	2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid
+Squalene and cholesterol biosynthesis	1	2	0.233509789093	E55		
+Phytanic acid peroxisomal oxidation	1	2	0.233509789093	E915	C00026	2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid
+Hyaluronan Metabolism	2	6	0.27661541047	E925,E137	,	$
+N-Glycan Degradation	3	10	0.28787496849	E925,E1335,E137	,,	$$
+Keratan sulfate degradation	3	10	0.28787496849	E925,E1335,E137	,,	$$
+Vitamin B6 (pyridoxine) metabolism	6	22	0.307537181749	E433,E1336,E1205,E1175,E418,E206	,,C00547,C00547,C00547,	$$L-Noradrenaline; Noradrenaline; Norepinephrine; Arterenol; 4-[(1R)-2-Amino-1-hydroxyethyl]-1,2-benzenediol$L-Noradrenaline; Noradrenaline; Norepinephrine; Arterenol; 4-[(1R)-2-Amino-1-hydroxyethyl]-1,2-benzenediol$L-Noradrenaline; Noradrenaline; Norepinephrine; Arterenol; 4-[(1R)-2-Amino-1-hydroxyethyl]-1,2-benzenediol$
+Urea cycle/amino group metabolism	29	106	0.309217712797	E418,E1406,E1123,E1121,E1910,E2059,E1175,E642,E1171,E112,E1162,E1696,E81,E913,E354,E1741,E1645,E136,E915,E766,E984,E145,E2074,E1726,E1258,E1205,E2229,E1013,E2210	C00547,,,,,C00217/C05938/C00025,C00547,,,,,,,C05936,C05589/C00788,,C05589/C00788,,C00026,CE5536,C02735/C00483,,C05936,C00217/C05938/C00025,CE5536,C00547,,C02735/C00483,	L-Noradrenaline; Noradrenaline; Norepinephrine; Arterenol; 4-[(1R)-2-Amino-1-hydroxyethyl]-1,2-benzenediol$$$$$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$L-Noradrenaline; Noradrenaline; Norepinephrine; Arterenol; 4-[(1R)-2-Amino-1-hydroxyethyl]-1,2-benzenediol$$$$$$$N4-Acetylaminobutanal$L-Normetanephrine/L-Adrenaline; (R)-(-)-Adrenaline; (R)-(-)-Epinephrine; (R)-(-)-Epirenamine; (R)-(-)-Adnephrine; 4-[(1R)-1-Hydroxy-2-(methylamino)ethyl]-1,2-benzenediol$$L-Normetanephrine/L-Adrenaline; (R)-(-)-Adrenaline; (R)-(-)-Epinephrine; (R)-(-)-Epirenamine; (R)-(-)-Adnephrine; 4-[(1R)-1-Hydroxy-2-(methylamino)ethyl]-1,2-benzenediol$$2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid$adrenochrome$Phenylethanolamine; 2-Amino-1-phenylethanol/Tyramine; 2-(p-Hydroxyphenyl)ethylamine$$N4-Acetylaminobutanal$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$adrenochrome$L-Noradrenaline; Noradrenaline; Norepinephrine; Arterenol; 4-[(1R)-2-Amino-1-hydroxyethyl]-1,2-benzenediol$$Phenylethanolamine; 2-Amino-1-phenylethanol/Tyramine; 2-(p-Hydroxyphenyl)ethylamine$
+Caffeine metabolism	1	3	0.31283085455	E1378		
+Fructose and mannose metabolism	2	7	0.313923199731	E2129,E1335	,	$
+Arachidonic acid metabolism	2	7	0.313923199731	E2059,E1726	C00217/C05938/C00025,C00217/C05938/C00025	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate
+Chondroitin sulfate degradation	2	7	0.313923199731	E1597,E137	,	$
+Glycerophospholipid metabolism	3	11	0.318124527351	E2089,E723,E1451	,,	$$
+Drug metabolism - cytochrome P450	3	11	0.318124527351	E797,E569,E2088	,,	$$
+Galactose metabolism	3	11	0.318124527351	E2129,E925,E137	,,	$$
+Sialic acid metabolism	3	11	0.318124527351	E925,E137,E1597	,,	$$
+Vitamin B9 (folate) metabolism	2	8	0.343332493068	E2059,E1726	C00217/C05938/C00025,C00217/C05938/C00025	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate
+Methionine and cysteine metabolism	6	24	0.344424838249	E1696,E1726,E2059,E915,E775,E150	,C00217/C05938/C00025,C00217/C05938/C00025,C00026,,	$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid$$
+TCA cycle	1	4	0.352575413831	E915	C00026	2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid
+Aspartate and asparagine metabolism	27	105	0.367700193261	E1406,E848,E1959,E1910,E2059,E2074,E1726,E913,E112,E1162,E2229,E81,E1286,E2026,E89,E1254,E322,E136,E915,E642,E2210,E145,E1541,E1544,E1099,E2072,E815	,C02714,,,C00217/C05938/C00025,C05936,C00217/C05938/C00025,C05936,,,,,,,,,,,C00026,,,,,,,C02714,	$N-Acetylputrescine$$$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$N4-Acetylaminobutanal$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$N4-Acetylaminobutanal$$$$$$$$$$$2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid$$$$$$$N-Acetylputrescine$
+Glycosphingolipid metabolism	2	9	0.368204352575	E1597,E137	,	$
+Hexose phosphorylation	2	9	0.368204352575	E2129,E2191	,	$
+Limonene and pinene degradation	4	18	0.380808335434	E595,E1679,E574,E4	,,,	$$$
+Glutathione Metabolism	3	14	0.385849928577	E2059,E1726,E322	C00217/C05938/C00025,C00217/C05938/C00025,	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$
+Leukotriene metabolism	1	5	0.390051256197	E150		
+CoA Catabolism	1	5	0.390051256197	E865		
+Vitamin B5 - CoA biosynthesis from pantothenate	1	5	0.390051256197	E865		
+Heparan sulfate degradation	2	10	0.400974708008	E925,E137	,	$
+Fatty acid activation	2	11	0.428535417192	E1692,E554	,	$
+Glutamate metabolism	5	27	0.455507940509	E2059,E1286,E915,E1099,E1726	C00217/C05938/C00025,,C00026,,C00217/C05938/C00025	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$$2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid$$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate
+Glycine, serine, alanine and threonine metabolism	14	65	0.4569363919	E112,E1406,E1123,E1696,E1583,E910,E1910,E1880,E2059,E577,E915,E687,E1726,E1379	,,,,,,,,C00217/C05938/C00025,C03508,C00026,,C00217/C05938/C00025,C02229/C01888/C05665	$$$$$$$$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$L-2-Amino-3-oxobutanoic acid; L-2-Amino-3-oxobutanoate; L-2-Amino-acetoacetate; (S)-2-Amino-3-oxobutanoic acid$2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid$$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$3-Aminopropanal/Aminoacetone; 1-Amino-2-propanone/beta-Aminopropion aldehyde
+Butanoate metabolism	9	46	0.461725905386	E1790,E1919,E1692,E1583,E554,E1726,E2059,E915,E1659	,,,,,C00217/C05938/C00025,C00217/C05938/C00025,C00026,	$$$$$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid$
+Beta-Alanine metabolism	6	33	0.461725905386	E1379,E1726,E2059,E915,E1576,E1621	C02229/C01888/C05665,C00217/C05938/C00025,C00217/C05938/C00025,C00026,C06486/C00386,C06486/C00386	3-Aminopropanal/Aminoacetone; 1-Amino-2-propanone/beta-Aminopropion aldehyde$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid$(6R)-6-(L-erythro-1,2-Dihydroxypropyl)-5,6,7,8-tetrahydro-4a-/Carnosine; Nalpha-(beta-alanyl)-L-histidine$(6R)-6-(L-erythro-1,2-Dihydroxypropyl)-5,6,7,8-tetrahydro-4a-/Carnosine; Nalpha-(beta-alanyl)-L-histidine
+Xenobiotics metabolism	1	9	0.467019578187	E1554		
+Purine metabolism	5	30	0.47029661373	E2059,E1286,E1099,E1463,E1726	C00217/C05938/C00025,,,,C00217/C05938/C00025	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$$$$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate
+Porphyrin metabolism	1	10	0.475422233426	E88		
+Valine, leucine and isoleucine degradation	5	36	0.491555331485	E2059,E1448,E1583,E915,E1726	C00217/C05938/C00025,,,C00026,C00217/C05938/C00025	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$$$2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate
+Tryptophan metabolism	10	60	0.491807411142	E2019,E894,E1296,E1726,E2059,E2009,E1055,E1380,E915,E996	,,,C00217/C05938/C00025,C00217/C05938/C00025,CE5538,,CE5538,C00026,	$$$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$noradrenochrome$$noradrenochrome$2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid$
+Arginine and Proline Metabolism	15	82	0.491891437694	E913,E1406,E322,E1162,E1696,E145,E848,E1726,E2059,E915,E2074,E136,E1099,E1286,E2072	C05936,,,,,,C02714,C00217/C05938/C00025,C00217/C05938/C00025,C00026,C05936,,,,C02714	N4-Acetylaminobutanal$$$$$$N-Acetylputrescine$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid/L-4-Hydroxyglutamate semialdehyde/L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate$2-Oxoglutarate; Oxoglutaric acid; 2-Ketoglutaric acid; alpha-Ketoglutaric acid$N4-Acetylaminobutanal$$$$N-Acetylputrescine
+Vitamin D3 (cholecalciferol) metabolism	0	0	0.494244181161			
+N-Glycan biosynthesis	0	2	0.494244181161			
+Dimethyl-branched-chain fatty acid mitochondrial beta-oxidation	0	0	0.494244181161			
+Pentose and Glucuronate Interconversions	0	4	0.494244181161			
+Vitamin B12 (cyanocobalamin) metabolism	0	0	0.494244181161			
+Nucleotide Sugar Metabolism	0	0	0.494244181161			
+Carbon fixation	0	1	0.494244181161			
+Ubiquinone Biosynthesis	0	1	0.494244181161			
+1- and 2-Methylnaphthalene degradation	0	0	0.494244181161			
+Prostaglandin formation from arachidonate	0	1	0.494244181161			
+Benzoate degradation via CoA ligation	0	0	0.494244181161			
+Atrazine degradation	0	0	0.494244181161			
+Glycosaminoglycan degradation	0	0	0.494244181161			
+Geraniol degradation	0	0	0.494244181161			
+Ascorbate (Vitamin C) and Aldarate Metabolism	0	5	0.494244181161			
+Fatty acid oxidation	0	0	0.494244181161			
+ROS Detoxification	0	0	0.494244181161			
+Saturated fatty acids beta-oxidation	0	1	0.494244181161			
+Vitamin A (retinol) metabolism	0	0	0.494244181161			
+Omega-3 fatty acid metabolism	0	0	0.494244181161			
+Mono-unsaturated fatty acid beta-oxidation	0	0	0.494244181161			
+Glycosphingolipid biosynthesis - neolactoseries	0	0	0.494244181161			
+D4&E4-neuroprostanes formation	0	1	0.494244181161			
+Phosphatidylinositol phosphate metabolism	0	2	0.494244181161			
+O-Glycan biosynthesis	0	0	0.494244181161			
+Sphingolipid metabolism	0	0	0.494244181161			
+Polyunsaturated fatty acid biosynthesis	0	0	0.494244181161			
+3-Chloroacrylic acid degradation	0	0	0.494244181161			
+Proteoglycan biosynthesis	0	0	0.494244181161			
+Vitamin K metabolism	0	0	0.494244181161			
+Keratan sulfate biosynthesis	0	0	0.494244181161			
+Dynorphin metabolism	0	0	0.494244181161			
+Vitamin D	0	0	0.494244181161			
+Glycosylphosphatidylinositol(GPI)-anchor biosynthesis	0	0	0.494244181161			
+Glycosphingolipid biosynthesis - lactoseries	0	0	0.494244181161			
+Bile acid biosynthesis	0	3	0.494244181161			
+Parathio degradation	0	1	0.494244181161			
+3-oxo-10R-octadecatrienoate beta-oxidation	0	0	0.494244181161			
+Blood Group Biosynthesis	0	0	0.494244181161			
+Propanoate metabolism	0	1	0.494244181161			
+Electron transport chain	0	0	0.494244181161			
+De novo fatty acid biosynthesis	0	0	0.494244181161			
+Glyoxylate and Dicarboxylate Metabolism	0	2	0.494244181161			
+Androgen and estrogen biosynthesis and metabolism	0	0	0.494244181161			
+Heparan sulfate biosynthesis	0	0	0.494244181161			
+Vitamin E metabolism	0	2	0.494244181161			
+Di-unsaturated fatty acid beta-oxidation	0	0	0.494244181161			
+Glycerolipid metabolism	0	0	0.494244181161			
+Glycolysis and Gluconeogenesis	0	2	0.494244181161			
+R Group Synthesis	0	0	0.494244181161			
+Vitamin B2 (riboflavin) metabolism	0	0	0.494244181161			
+Pyruvate Metabolism	0	0	0.494244181161			
+C5-Branched dibasic acid metabolism	0	0	0.494244181161			
+Pentose phosphate pathway	0	5	0.494244181161			
+C21-steroid hormone biosynthesis and metabolism	0	1	0.494244181161			
+Starch and Sucrose Metabolism	0	2	0.494244181161			
+Trihydroxycoprostanoyl-CoA beta-oxidation	0	0	0.494244181161			
+Drug metabolism - other enzymes	0	2	0.494244181161			
+Selenoamino acid metabolism	0	4	0.494244181161			
+Omega-6 fatty acid metabolism	0	0	0.494244181161			
+Prostaglandin formation from dihomo gama-linoleic acid	0	0	0.494244181161			
