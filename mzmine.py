@@ -6,11 +6,18 @@ import numpy as np
 def pick_peaks(file_list,
                 xml_template = 'batch_files/PretermPilot2Reduced.xml',
                 output_dir = '/Users/simon/git/pymzmine/output',
-                mzmine_command = '/Users/simon/MZmine-2.40.1/startMZmine_MacOSX.command'):
+                mzmine_command = '/Users/simon/MZmine-2.40.1/startMZmine_MacOSX.command',
+                force = False):
     et = xml.etree.ElementTree.parse(xml_template)
     # Loop over files in the list (just the firts three for now)
     for filename in file_list:
         print("Creating xml batch file for {}".format(filename.split(os.sep)[-1]))
+
+        # if any output files to be produced do not already exist
+        # we run. Otherwise, we only run if force = True
+        # any block that produces an output file that doesn't already exist sets this to True.
+        need_to_run = False
+
         root = et.getroot()
         for child in root:
             # Set the input filename
@@ -26,40 +33,59 @@ def pick_peaks(file_list,
                         text = g.text
                         if tag == 'current_file':
                             mztab_name = os.path.join(output_dir,filename.split(os.sep)[-1].split('.')[0]+'_pp.mzTab')
+                            # check if the file exists: if it already does, don't do it again (unless Force = True)
                             g.text = mztab_name
+                            if not os.path.exists(mztab_name):
+                                need_to_run = True
             if child.attrib['method'] == 'net.sf.mzmine.modules.peaklistmethods.io.gnpsexport.GNPSExportAndSubmitModule':
                 for e in child:
                     for g in e:
                         if g.tag == 'current_file':
                             mgf_name = os.path.join(output_dir,filename.split(os.sep)[-1].split('.')[0] + '.mgf')
                             g.text = mgf_name
+                            if not os.path.exists(mgf_name):
+                                need_to_run = True
             if child.attrib['method'] == 'net.sf.mzmine.modules.peaklistmethods.io.csvexport.CSVExportModule':
                 for e in child:
                     for g in e:
                         if g.tag == 'current_file':
                             csv_box_name = os.path.join(output_dir,filename.split(os.sep)[-1].split('.')[0] + '_box.csv')
                             g.text = csv_box_name
+                            if not os.path.exists(csv_box_name):
+                                need_to_run = True
         # write the xml file for this input file
         new_xml_name = os.path.join(output_dir,filename.split(os.sep)[-1].split('.')[0]+'.xml')
         et.write(new_xml_name)
         # Run mzmine
-        print("Running mzMine for {}".format(filename.split(os.sep)[-1]))
-        os.system(mzmine_command + ' {}'.format(new_xml_name))
+        
+        if force or need_to_run:
+            print("Running mzMine for {}".format(filename.split(os.sep)[-1]))
+            os.system(mzmine_command + ' {}'.format(new_xml_name))
+        else:
+            print("Output exists for {}. Set force = True to overwrite".format(filename))
 
 
 
 def align(mztab_folder,
             xml_template = 'batch_files/align_from_mztab.xml',
-            mzmine_command = '/Users/simon/MZmine-2.40.1/startMZmine_MacOSX.command', rt_window = 0.5):
+            mzmine_command = '/Users/simon/MZmine-2.40.1/startMZmine_MacOSX.command', rt_window = 0.5,
+            output_csv_name = 'pp_aligned.csv',
+            specific_files = None):
     # grab all the mztab files in a folder
     # mztab_folder = '/Users/simon/git/pymzmine/output'
 
-    tab_files = glob.glob(os.path.join(mztab_folder,'*.mzTab'))
+
+    # if a specific set of files is provided, use those
+    # otherwise use all files in the folder
+    if specific_files is None:
+        tab_files = glob.glob(os.path.join(mztab_folder,'*.mzTab'))
+    else:
+        tab_files = specific_files
     print(tab_files)
 
 
     # The output name for the aligned peaks
-    csv_name = os.path.join(mztab_folder,'pp_aligned.csv')
+    csv_name = os.path.join(mztab_folder,output_csv_name)
 
 
     et = xml.etree.ElementTree.parse(xml_template)
@@ -108,9 +134,9 @@ def align(mztab_folder,
     os.system(mzmine_command + " " + xml_name)
 
 
-def match_aligned_to_original(aligned_peaks,original_files,output_dir,f_idx_dict,write_file = True):
+def match_aligned_to_original(aligned_peaks,original_files,output_dir,f_idx_dict,write_file = True,original_csv_suffix = '_quant'):
     import csv
-    original_csvs = [os.path.join(output_dir,original_file + '_quant.csv') for original_file in original_files]
+    original_csvs = [os.path.join(output_dir,original_file + original_csv_suffix + '.csv') for original_file in original_files]
 
     matches = {}
     for file_pos,o in enumerate(original_files):
@@ -132,8 +158,8 @@ def match_aligned_to_original(aligned_peaks,original_files,output_dir,f_idx_dict
 
         for i,local_peak in enumerate(local_peaks):
             a_peak = sub_aligned[i]
-            assert abs(local_peak[3] - a_peak[3][this_idx]) < 0.1
-            assert abs(local_peak[1] - a_peak[1] < 0.1)
+            assert abs(local_peak[3] - a_peak[3][this_idx]) < 0.1,print(local_peak,a_peak)
+            assert abs(local_peak[1] - a_peak[1]) < 0.1
 
             if not a_peak in matches:
                 matches[a_peak] = {}
@@ -247,14 +273,16 @@ def compute_cosine_aligned_peaks(aligned_peaks,original_files,output_dir,matches
             print(n_done,len(aligned_peaks))
     return worst_matches
 
-def load_aligned_peaks(output_dir,aligned_csv = 'pp_aligned.csv'):
+def load_aligned_peaks(output_dir,aligned_csv = 'pp_aligned.csv',original_csv_suffix = '_quant'):
     import csv
     align_file = os.path.join(output_dir,aligned_csv) # file including the aligned peaks and intensities
-    original_files = glob.glob(os.path.join(output_dir,'*.mgf'))
+    original_files = glob.glob(os.path.join(output_dir,'*.xml'))
 
     original_files = [o.split(os.sep)[-1].split('.')[0] for o in original_files]
 
-    original_csvs = [os.path.join(output_dir,original_file + '_quant.csv') for original_file in original_files]
+
+    original_csvs = [os.path.join(output_dir,original_file + original_csv_suffix + '.csv') for original_file in original_files]
+    print(original_csvs)
 
     aligned_peaks = []
     f_idx_dict =  {}
