@@ -11,9 +11,12 @@ class Peak(object): # todo: add MS2 information
         self.source_file = source_file
         self.source_id = source_id
         self.ms2_spectrum = None
+        
+    def add_ms2_spectrum(self,ms2_spectrum):
+        self.ms2_spectrum = ms2_spectrum
     
     def __str__(self):
-        return "{} ({}): {},{}".format(self.source_file,self.source_id,self.mz,self.rt)
+        return "{} ({}): {},{},{}".format(self.source_file,self.source_id,self.mz,self.rt,self.ms2_spectrum)
 
 class PeakSet(object): # todo add MS2 information
     def __init__(self,peak):
@@ -66,9 +69,9 @@ class PeakSet(object): # todo add MS2 information
                 if score >= best_score:
                     best_ms2 = p.ms2_spectrum
         return best_ms2
-
+    
+  
         
-
 class JoinAligner(object):
     def __init__(self,mz_tolerance_absolute = 0.01,mz_tolerance_ppm = 10,rt_tolerance = 0.5):
         self.peaksets = []
@@ -78,7 +81,7 @@ class JoinAligner(object):
         self.mz_weight = 75
         self.rt_weight = 25
         self.files_loaded = []
-    def add_file(self,input_csv):
+    def add_file(self,input_csv,input_mgf=None):
         with open(input_csv,'r') as f:
             reader =  csv.reader(f)
             heads = next(reader)
