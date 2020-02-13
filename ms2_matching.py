@@ -174,10 +174,10 @@ def load_picked_boxes(csv_name):
         id_pos = 0
         mz_pos = 1
         rt_pos = 2
-        rt_start = 3
-        rt_end = 4
-        mz_min = 5
-        mz_max = 6
+        rt_start = 4
+        rt_end = 5
+        mz_min = 6
+        mz_max = 7
         for line in reader:
             boxes.append(PickedBox(int(line[id_pos]),
                                   float(line[mz_pos]),
@@ -419,4 +419,5 @@ def simple_align(peak_set,peaks,sample_id,ppm = 10):
                 del peak_set[best_mz]
         else:
             peak_set[this_mz] = [(sample_id,this_mz,intensity)]
+    
 
