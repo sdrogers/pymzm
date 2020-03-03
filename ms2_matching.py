@@ -180,7 +180,7 @@ def load_picked_boxes(csv_name):
         rt_start = [i for i,h in enumerate(heads) if 'RT start' in h][0]
         rt_end = [i for i,h in enumerate(heads) if 'RT end' in h][0]
         mz_min = [i for i,h in enumerate(heads) if 'm/z min' in h][0]
-        mz_maqx = [i for i,h in enumerate(heads) if 'm/z max' in h][0]
+        mz_max = [i for i,h in enumerate(heads) if 'm/z max' in h][0]
         try:
             area_pos = [i for i,h in enumerate(heads) if 'Peak area' in h][0]
             height_pos = [i for i,h in enumerate(heads) if 'Peak height' in h][0]
