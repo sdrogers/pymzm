@@ -141,13 +141,16 @@ class MZMLFile(object):
         print("Loaded {} scans".format(scan_no))
 
 class PickedBox(object):
-    def __init__(self,peak_id,mz,rt,mz_min,mz_max,rt_min,rt_max):
+    def __init__(self,peak_id,mz,rt,mz_min,mz_max,rt_min,rt_max,area = None,height = None):
         self.peak_id = peak_id
         self.mz = mz
         self.rt_in_minutes = rt
         self.mz_range = [mz_min,mz_max]
         self.rt_range = [rt_min,rt_max]
         self.ms2_scans = []
+        self.area = area
+        self.height = height
+        self.rt_range_in_seconds = [60.0*r for r in self.rt_range]
     
     def __str__(self):
         return str(self.peak_id) + ": " + str(self.mz_range) + " " + str(self.rt_range)
@@ -174,18 +177,36 @@ def load_picked_boxes(csv_name):
         id_pos = 0
         mz_pos = 1
         rt_pos = 2
-        rt_start = 4
-        rt_end = 5
-        mz_min = 6
-        mz_max = 7
+        rt_start = [i for i,h in enumerate(heads) if 'RT start' in h][0]
+        rt_end = [i for i,h in enumerate(heads) if 'RT end' in h][0]
+        mz_min = [i for i,h in enumerate(heads) if 'm/z min' in h][0]
+        mz_maqx = [i for i,h in enumerate(heads) if 'm/z max' in h][0]
+        try:
+            area_pos = [i for i,h in enumerate(heads) if 'Peak area' in h][0]
+            height_pos = [i for i,h in enumerate(heads) if 'Peak height' in h][0]
+        except:
+            area_pos = None
+            height_pos = None
         for line in reader:
-            boxes.append(PickedBox(int(line[id_pos]),
-                                  float(line[mz_pos]),
-                                  float(line[rt_pos]),
-                                  float(line[mz_min]),
-                                  float(line[mz_max]),
-                                  float(line[rt_start]),
-                                  float(line[rt_end])))
+            if area_pos:
+                boxes.append(PickedBox(int(line[id_pos]),
+                                    float(line[mz_pos]),
+                                    float(line[rt_pos]),
+                                    float(line[mz_min]),
+                                    float(line[mz_max]),
+                                    float(line[rt_start]),
+                                    float(line[rt_end]),
+                                    area = float(line[area_pos]),
+                                    height = float(line[height_pos])))
+            else:
+                boxes.append(PickedBox(int(line[id_pos]),
+                                    float(line[mz_pos]),
+                                    float(line[rt_pos]),
+                                    float(line[mz_min]),
+                                    float(line[mz_max]),
+                                    float(line[rt_start]),
+                                    float(line[rt_end])))
+
         
     return boxes
 
