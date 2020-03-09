@@ -173,7 +173,6 @@ def load_picked_boxes(csv_name):
     with open(csv_name,'r') as f:
         reader = csv.reader(f)
         heads = next(reader)
-        print(heads)
         id_pos = 0
         mz_pos = 1
         rt_pos = 2
