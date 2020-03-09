@@ -11,6 +11,7 @@ class MZMLScan(object):
         self.ms_level = ms_level
         self.peaks = peaks
         self.rt_in_minutes = rt_in_minutes
+        self.rt_in_seconds = 60.0*rt_in_minutes
         self.precursor_mz = precursor_mz
         self.previous_ms1 = None
         self.next_ms1 = None
@@ -143,6 +144,8 @@ class MZMLFile(object):
 class PickedBox(object):
     def __init__(self,peak_id,mz,rt,mz_min,mz_max,rt_min,rt_max,area = None,height = None):
         self.peak_id = peak_id
+        self.rt = rt
+        self.rt_in_seconds = rt*60.0
         self.mz = mz
         self.rt_in_minutes = rt
         self.mz_range = [mz_min,mz_max]
@@ -210,20 +213,24 @@ def load_picked_boxes(csv_name):
     return boxes
 
 
-def map_boxes_to_scans(mzml_file,boxes,half_isolation_window = 0.75):
+def map_boxes_to_scans(mzml_file,boxes,half_isolation_window = 0.75,allow_last_overlap = False):
     scans2boxes = {}
     boxes2scans = {}
     for scan in mzml_file.scans:
         if scan.ms_level == 1:
             continue
         rt = scan.rt_in_minutes
+        if allow_last_overlap:
+            previous_ms1 = scan.previous_ms1
+            if previous_ms1:
+                rt = previous_ms1.rt_in_minutes
         min_mz = scan.precursor_mz - half_isolation_window
         max_mz = scan.precursor_mz + half_isolation_window
         sub_boxes = list(filter(lambda x: 
-                        min_mz < x.mz_range[1] and
-                        max_mz > x.mz_range[0] and
-                        rt > x.rt_range[0] and 
-                        rt < x.rt_range[1], boxes))
+                        min_mz <= x.mz_range[1] and
+                        max_mz >= x.mz_range[0] and
+                        rt >= x.rt_range[0] and 
+                        rt <= x.rt_range[1], boxes))
         if len(sub_boxes) > 0:
             scans2boxes[scan] = sub_boxes
             for box in sub_boxes:
