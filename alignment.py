@@ -73,7 +73,12 @@ class PeakSet(object): # todo add MS2 information
   
         
 class JoinAligner(object):
-    def __init__(self,mz_tolerance_absolute = 0.01,mz_tolerance_ppm = 10,rt_tolerance = 0.5):
+    def __init__(self,mz_tolerance_absolute = 0.01,
+                 mz_tolerance_ppm = 10,
+                 rt_tolerance = 0.5,
+                 mz_column_pos = 1,
+                 rt_column_pos = 2,
+                 intensity_column_pos = 3):
         self.peaksets = []
         self.mz_tolerance_absolute = mz_tolerance_absolute
         self.mz_tolerance_ppm = mz_tolerance_ppm
@@ -81,17 +86,24 @@ class JoinAligner(object):
         self.mz_weight = 75
         self.rt_weight = 25
         self.files_loaded = []
+        self.mz_column_pos = mz_column_pos
+        self.rt_column_pos = rt_column_pos
+        self.intensity_column_pos = intensity_column_pos
     def add_file(self,input_csv,input_mgf=None):
         with open(input_csv,'r') as f:
             reader =  csv.reader(f)
             heads = next(reader)
             these_peaks = []
-            short_name = input_csv.split(os.sep)[-1].split('.')[0].split('_quant')[0]
+            try:
+                short_name = input_csv.split(os.sep)[-1].split('.')[0].split('_quant')[0]
+            except:
+                short_name = input_csv.split(os.sep)[-1]
+                
             for line in reader:
                 source_id = int(line[0])
-                peak_mz = float(line[1])
-                peak_rt = float(line[2])
-                peak_intensity = float(line[3])
+                peak_mz = float(line[self.mz_column_pos])
+                peak_rt = float(line[self.rt_column_pos])
+                peak_intensity = float(line[self.intensity_column_pos]) # this is broken for box files
 
                 these_peaks.append(Peak(peak_mz,peak_rt,peak_intensity,short_name,source_id))
         if len(self.peaksets) == 0:
