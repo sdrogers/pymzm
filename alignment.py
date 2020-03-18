@@ -103,9 +103,12 @@ class JoinAligner(object):
                 source_id = int(line[0])
                 peak_mz = float(line[self.mz_column_pos])
                 peak_rt = float(line[self.rt_column_pos])
-                peak_intensity = float(line[self.intensity_column_pos]) # this is broken for box files
+                peak_intensity = float(line[self.intensity_column_pos]) 
 
                 these_peaks.append(Peak(peak_mz,peak_rt,peak_intensity,short_name,source_id))
+        self._align(these_peaks,short_name)
+    
+    def _align(self,these_peaks,short_name):
         if len(self.peaksets) == 0:
             # first file
             for peak in these_peaks:
@@ -139,5 +142,62 @@ class JoinAligner(object):
                 intensity_matrix[i,j] = peakset.get_intensity(filename)
         return intensity_matrix
 
+class BoxJoinAligner(JoinAligner):
+    def __init__(self,mz_tolerance_absolute = 0.01,
+                 mz_tolerance_ppm = 10,
+                 rt_tolerance = 0.5,
+                 mz_column_pos = 1,
+                 rt_column_pos = 2,
+                 intensity_column_pos = 3):
+        super().__init__(mz_tolerance_absolute,
+                        mz_tolerance_ppm,
+                        rt_tolerance,
+                        mz_column_pos,
+                        rt_column_pos,
+                        intensity_column_pos)
+        self.peaksets2boxes = {}
+
+    def add_file(self,input_csv,input_mgf=None):
+        from ms2_matching import load_picked_boxes
+        with open(input_csv,'r') as f:
+            reader =  csv.reader(f)
+            heads = next(reader)
+            these_peaks = []
+            try:
+                short_name = input_csv.split(os.sep)[-1].split('.')[0].split('_quant')[0]
+            except:
+                short_name = input_csv.split(os.sep)[-1]
+                
+            for line in reader:
+                source_id = int(line[0])
+                peak_mz = float(line[self.mz_column_pos])
+                peak_rt = float(line[self.rt_column_pos])
+                peak_intensity = float(line[self.intensity_column_pos]) 
+
+                these_peaks.append(Peak(peak_mz,peak_rt,peak_intensity,short_name,source_id))
+
+        # load the boxes
+        temp_boxes = load_picked_boxes(input_csv)
+        # convert to dictionary for speedy lookup
+        temp_boxes = {box.peak_id: box for box in temp_boxes}
+        n_peaksets = len(self.peaksets)
+        # do the alignment
+        self._align(these_peaks,short_name)
+
+        # add boxes to the *new* peaksets
+        self._add_boxes_to_peaksets(temp_boxes,short_name,n_peaksets)
+
+    def _add_boxes_to_peaksets(self,temp_boxes,short_name,n_peaksets):
+        for peakset in self.peaksets[n_peaksets:]:
+            assert not peakset in self.peaksets2boxes
+            peak = peakset.peaks[0] # should only be one peak in the set
+            assert peak.source_file == short_name
+            # get the box
+            peak_id = peak.source_id
+            assert peak_id in temp_boxes
+            self.peaksets2boxes[peakset] = temp_boxes[peak_id]
 
 
+
+
+                    
