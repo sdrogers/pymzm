@@ -50,6 +50,7 @@ def pick_peaks(file_list,
                     for g in e:
                         if g.tag == 'current_file':
                             csv_box_name = os.path.join(output_dir,filename.split(os.sep)[-1].split('.')[0] + '_box.csv')
+                            print(csv_box_name)
                             g.text = csv_box_name
                             if not os.path.exists(csv_box_name):
                                 need_to_run = True
