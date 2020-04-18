@@ -1,0 +1,135 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C00221	beta-D-Glucose	11.437509131	row4	E358
+C02238	5-Oxo-L-proline	-2.5177872655	row190	E81
+C00819	D-Glutamine; D-2-Aminoglutaramic acid	-12.3758771662	row3	E432
+c226crn	cervonyl carnitine	-5.24183724066	row54	E558
+C04282	1-Pyrroline-4-hydroxy-2-carboxylate	-2.5177872655	row190	E81
+C00217	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid	-6.0392603427	row39	E574
+C00078	L-Tryptophan; Tryptophan; (S)-alpha-Amino-beta-(3-indolyl)-propionic acid	-2.48117438499	row194	E690
+C00795	D-Tagatose; lyxo-Hexulose	-4.28251910841	row81	E515
+C00217	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid	-4.67300039601	row71	E512
+C00064	L-Glutamine; L-2-Aminoglutaramic acid	-6.0392603427	row39	E432
+C05938	L-4-Hydroxyglutamate semialdehyde	-6.0392603427	row39	E574
+C00738	D-Hexose	11.437509131	row4	E358
+C02238	5-Oxo-L-proline	-4.67300039601	row71	E258
+dcsptn1crn	docosa-4,7,10,13,16-pentaenoyl carnitine	-4.16203909059	row93	E627
+C00064	L-Glutamine; L-2-Aminoglutaramic acid	-8.48291861074	row8	E432
+C00962	beta-D-Galactose	-4.28251910841	row81	E515
+C00095	D-Fructose; Levulose; Fruit sugar; D-arabino-Hexulose	-4.28251910841	row81	E515
+C00025	L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate	-2.61712465688	row180	E95
+C00217	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid	-2.61712465688	row180	E95
+dcsptn1crn	docosa-4,7,10,13,16-pentaenoyl carnitine	-3.83171918146	row107	E685
+C00819	D-Glutamine; D-2-Aminoglutaramic acid	-6.88345545439	row23	E432
+C03465	3-Methyl-2-oxopentanoate; 2-Oxo-3-methylvalerate	4.58298108038	row77	E424
+C05938	L-4-Hydroxyglutamate semialdehyde	-2.61712465688	row180	E95
+C00245	Taurine; 2-Aminoethanesulfonic acid; Aminoethylsulfonic acid	-6.37917842169	row31	E201
+C01879	5-Oxoproline; Pyroglutamic acid; 5-Pyrrolidone-2-carboxylic acid; Pyroglutamate; 5-Oxo-L-proline; L-Pyroglutamic acid; L-5-Pyrrolidone-2-carboxylic acid	-6.0392603427	row39	E328
+C00525	D-Tryptophan	-2.66385951844	row172	E690
+C00137	myo-Inositol; D-myo-Inositol; 1D-myo-Inositol; L-myo-Inositol; 1L-myo-Inositol; meso-Inositol; Inositol; Dambose; Cyclohexitol; Meat sugar; Bios I	-4.28251910841	row81	E515
+C01582	Galactose	-4.28251910841	row81	E515
+C00906	5,6-Dihydrothymine; Dihydrothymine; 5,6-Dihydro-5-methyluracil	-3.26551659575	row126	E314
+C00073	L-Methionine; Methionine; L-2-Amino-4methylthiobutyric acid	-3.04847523379	row137	E371
+C04281	L-1-Pyrroline-3-hydroxy-5-carboxylate; 3-Hydroxy-L-1-pyrroline-5-carboxylate; (3R,5S)-1-Pyrroline-3-hydroxy-5-carboxylate	-4.67300039601	row71	E258
+C00155	L-Homocysteine; L-2-Amino-4-mercaptobutyric acid	-3.58435775981	row114	E656
+C00233	4-Methyl-2-oxopentanoate; 2-Oxoisocaproate	4.58298108038	row77	E424
+C00247	L-Sorbose; L-xylo-Hexulose	-4.28251910841	row81	E515
+C02642	3-Ureidopropionate; 3-Ureidopropanoate; beta-Ureidopropionic acid; N-Carbamoyl-beta-alanine	5.89661472433	row42	E412
+C04282	1-Pyrroline-4-hydroxy-2-carboxylate	-6.23542334333	row34	E328
+C00124	D-Galactose	-4.28251910841	row81	E515
+C00984	alpha-D-Galactose	-4.28251910841	row81	E515
+C05660	5-Methoxyindoleacetate	-2.66385951844	row172	E468
+C00407	L-Isoleucine; 2-Amino-3-methylvaleric acid	-2.59296034621	row182	E561
+C06124	Sphingosine 1-phosphate; Sphing-4-enine 1-phosphate	-3.50109735737	row116	E446
+C07480		-4.28251910841	row81	E270
+C00078	L-Tryptophan; Tryptophan; (S)-alpha-Amino-beta-(3-indolyl)-propionic acid	-2.49927303419	row193	E690
+C00064	L-Glutamine; L-2-Aminoglutaramic acid	-6.88345545439	row23	E432
+C00031	D-Glucose; Grape sugar; Dextrose	11.437509131	row4	E358
+C04281	L-1-Pyrroline-3-hydroxy-5-carboxylate; 3-Hydroxy-L-1-pyrroline-5-carboxylate; (3R,5S)-1-Pyrroline-3-hydroxy-5-carboxylate	-2.88228422678	row152	E328
+C05647	Formyl-5-hydroxykynurenamine	3.91592660864	row104	E120
+C00819	D-Glutamine; D-2-Aminoglutaramic acid	-6.0392603427	row39	E432
+C00108	Anthranilate; Anthranilic acid; o-Aminobenzoic acid; Vitamin L1; 2-Aminobenzoate	-3.1036592704	row134	E281
+C00819	D-Glutamine; D-2-Aminoglutaramic acid	-8.48291861074	row8	E432
+C00267	alpha-D-Glucose	-4.28251910841	row81	E515
+CE2152		-2.66274428829	row173	E530
+C00025	L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate	-6.0392603427	row39	E574
+C04281	L-1-Pyrroline-3-hydroxy-5-carboxylate; 3-Hydroxy-L-1-pyrroline-5-carboxylate; (3R,5S)-1-Pyrroline-3-hydroxy-5-carboxylate	-6.0392603427	row39	E328
+C05100	3-Ureidoisobutyrate	-6.0392603427	row39	E432
+C00064	L-Glutamine; L-2-Aminoglutaramic acid	-8.63518278023	row7	E432
+C05100	3-Ureidoisobutyrate	-8.48291861074	row8	E432
+C00025	L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate	-2.5177872655	row190	E449
+C00178	Thymine; 5-Methyluracil	3.26711004405	row125	E393
+CE5541	adrenochrome o-semiquinone	-4.28251910841	row81	E270
+C13747	1,7-Dimethylxanthine; Paraxanthine	11.437509131	row4	E358
+C00025	L-Glutamate; L-Glutamic acid; L-Glutaminic acid; Glutamate	-4.67300039601	row71	E512
+C06124	Sphingosine 1-phosphate; Sphing-4-enine 1-phosphate	-6.48736891264	row30	E138
+C07480		11.437509131	row4	E358
+C00328	L-Kynurenine; 3-Anthraniloyl-L-alanine	3.91592660864	row104	E120
+C02336	beta-D-Fructose; beta-Fruit sugar; beta-D-arabino-Hexulose; beta-Levulose; Fructose	11.437509131	row4	E358
+C00221	beta-D-Glucose	-4.28251910841	row81	E515
+tmndnccrn	Timnodonyl carnitine	-7.39313949175	row17	E80
+C01582	Galactose	11.437509131	row4	E358
+pcrn	propionyl-carnitine	2.95657480047	row143	E585
+C00936		11.437509131	row4	E358
+C00738	D-Hexose	-4.28251910841	row81	E515
+clpndcrn	clupanodonyl carnitine	-3.83171918146	row107	E685
+C04281	L-1-Pyrroline-3-hydroxy-5-carboxylate; 3-Hydroxy-L-1-pyrroline-5-carboxylate; (3R,5S)-1-Pyrroline-3-hydroxy-5-carboxylate	-2.5177872655	row190	E81
+C00962	beta-D-Galactose	11.437509131	row4	E358
+tetpent6crn	tetracosapentaenoyl carnitine	-3.43251040388	row119	E246
+C00906	5,6-Dihydrothymine; Dihydrothymine; 5,6-Dihydro-5-methyluracil	-8.63518278023	row7	E314
+C00073	L-Methionine; Methionine; L-2-Amino-4methylthiobutyric acid	-3.02760043727	row138	E371
+C00159	D-Mannose; Mannose; Seminose; Carubinose	11.437509131	row4	E358
+C00984	alpha-D-Galactose	11.437509131	row4	E358
+C01252	4-(2-Aminophenyl)-2,4-dioxobutanoate	2.7180735119	row165	E482
+C00302	DL-Glutamate; DL-Glutaminic acid; 2-Aminoglutaric acid; Glutamate	-2.61712465688	row180	E162
+tetpent3crn	tetracosapentaenoyl carnitine	-3.43251040388	row119	E246
+C05938	L-4-Hydroxyglutamate semialdehyde	-2.5177872655	row190	E449
+C00293	Glucose	11.437509131	row4	E358
+C05100	3-Ureidoisobutyrate	-6.88345545439	row23	E432
+C06102	Adipate semialdehyde; Hexan-1-one-6-carboxylate; 6-Oxohexanoate	4.58298108038	row77	E424
+C00525	D-Tryptophan	-2.49927303419	row193	E690
+C13747	1,7-Dimethylxanthine; Paraxanthine	-4.28251910841	row81	E270
+C05522	Cytosine (in DNA)	3.62900608086	row111	E372
+C00819	D-Glutamine; D-2-Aminoglutaramic acid	-8.63518278023	row7	E432
+C00329	D-Glucosamine; Chitosamine; 2-Amino-2-deoxy-D-glucose	3.72321263971	row109	E126
+C00267	alpha-D-Glucose	11.437509131	row4	E358
+C00031	D-Glucose; Grape sugar; Dextrose	-4.28251910841	row81	E515
+C01717	4-Hydroxy-2-quinolinecarboxylic acid; Kynurenic acid; Kynurenate	2.7180735119	row165	E56
+C06212	N-Methylserotonin	-2.67100876147	row170	E440
+C01879	5-Oxoproline; Pyroglutamic acid; 5-Pyrrolidone-2-carboxylic acid; Pyroglutamate; 5-Oxo-L-proline; L-Pyroglutamic acid; L-5-Pyrrolidone-2-carboxylic acid	-6.23542334333	row34	E328
+C04282	1-Pyrroline-4-hydroxy-2-carboxylate	-4.67300039601	row71	E258
+clpndcrn	clupanodonyl carnitine	-4.16203909059	row93	E627
+C00073	L-Methionine; Methionine; L-2-Amino-4methylthiobutyric acid	-2.90763950868	row150	E371
+C05100	3-Ureidoisobutyrate	-8.63518278023	row7	E432
+C00124	D-Galactose	11.437509131	row4	E358
+C05100	3-Ureidoisobutyrate	-12.3758771662	row3	E432
+C00906	5,6-Dihydrothymine; Dihydrothymine; 5,6-Dihydro-5-methyluracil	-12.3758771662	row3	E314
+C00152	L-Asparagine; 2-Aminosuccinamic acid	5.89661472433	row42	E412
+C00795	D-Tagatose; lyxo-Hexulose	11.437509131	row4	E358
+C01879	5-Oxoproline; Pyroglutamic acid; 5-Pyrrolidone-2-carboxylic acid; Pyroglutamate; 5-Oxo-L-proline; L-Pyroglutamic acid; L-5-Pyrrolidone-2-carboxylic acid	-2.88228422678	row152	E328
+C04281	L-1-Pyrroline-3-hydroxy-5-carboxylate; 3-Hydroxy-L-1-pyrroline-5-carboxylate; (3R,5S)-1-Pyrroline-3-hydroxy-5-carboxylate	-6.23542334333	row34	E328
+C00123	L-Leucine; 2-Amino-4-methylvaleric acid; (2S)-alpha-2-Amino-4-methylvaleric acid; (2S)-alpha-Leucine	-2.59296034621	row182	E561
+C00380	Cytosine	3.62900608086	row111	E372
+C00247	L-Sorbose; L-xylo-Hexulose	11.437509131	row4	E358
+C00936		-4.28251910841	row81	E515
+lneldccrn	Linoelaidyl carnitine	-4.25262704264	row84	E102
+C00525	D-Tryptophan	-2.48117438499	row194	E690
+C00217	D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid	-2.5177872655	row190	E449
+C00159	D-Mannose; Mannose; Seminose; Carubinose	-4.28251910841	row81	E515
+C16365	5-Acetylamino-6-formylamino-3-methyluracil; AFMU	-2.76941001297	row161	E544
+C00078	L-Tryptophan; Tryptophan; (S)-alpha-Amino-beta-(3-indolyl)-propionic acid	-2.66385951844	row172	E690
+C04282	1-Pyrroline-4-hydroxy-2-carboxylate	-6.0392603427	row39	E328
+C14800	1-Nitronaphthalene-5,6-oxide	2.7180735119	row165	E56
+C04282	1-Pyrroline-4-hydroxy-2-carboxylate	-2.88228422678	row152	E328
+C05938	L-4-Hydroxyglutamate semialdehyde	-4.67300039601	row71	E512
+C05660	5-Methoxyindoleacetate	-3.25552193361	row127	E61
+C00293	Glucose	-4.28251910841	row81	E515
+C02336	beta-D-Fructose; beta-Fruit sugar; beta-D-arabino-Hexulose; beta-Levulose; Fructose	-4.28251910841	row81	E515
+C14802	1-Nitronaphthalene-7,8-oxide	2.7180735119	row165	E56
+C00137	myo-Inositol; D-myo-Inositol; 1D-myo-Inositol; L-myo-Inositol; 1L-myo-Inositol; meso-Inositol; Inositol; Dambose; Cyclohexitol; Meat sugar; Bios I	11.437509131	row4	E358
+C00095	D-Fructose; Levulose; Fruit sugar; D-arabino-Hexulose	11.437509131	row4	E358
+C01879	5-Oxoproline; Pyroglutamic acid; 5-Pyrrolidone-2-carboxylic acid; Pyroglutamate; 5-Oxo-L-proline; L-Pyroglutamic acid; L-5-Pyrrolidone-2-carboxylic acid	-4.67300039601	row71	E258
+C00064	L-Glutamine; L-2-Aminoglutaramic acid	-12.3758771662	row3	E432
+CE2122	methyl indole-3-acetate	-3.8352689831	row106	E514
+lnlccrn	Linoleyl carnitine	-4.25262704264	row84	E102
+C01879	5-Oxoproline; Pyroglutamic acid; 5-Pyrrolidone-2-carboxylic acid; Pyroglutamate; 5-Oxo-L-proline; L-Pyroglutamic acid; L-5-Pyrrolidone-2-carboxylic acid	-2.5177872655	row190	E81
+C02835	Imidazole-4-acetate; Imidazoleacetic acid; 4-Imidazoleacetate	3.26711004405	row125	E393
