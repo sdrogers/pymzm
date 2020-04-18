@@ -267,7 +267,7 @@ def interpolate(precursor_mz,ms1_1,ms1_2,forced_rt):
     inte_diff = post[1] - pre[1]
     return pre[1]+inte_diff*rt_fac
 
-def create_deconvolution_matrices(subset_scans,subset_boxes):
+def create_deconvolution_matrices(subset_scans,subset_boxes,min_ms2_intensity = 5000):
     n_scans = len(subset_scans)
     n_ms1 = len(subset_boxes)
     scan_list = list(subset_scans)
@@ -286,6 +286,8 @@ def create_deconvolution_matrices(subset_scans,subset_boxes):
         rspec = []
         for mz,intensity in s.peaks:
             rmz = round(mz,2)
+            if intensity < min_ms2_intensity:
+                continue
             if not rmz in frags_idx:
                 frags_idx[rmz] = frag_pos
                 frag_pos += 1
