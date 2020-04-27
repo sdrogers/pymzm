@@ -123,4 +123,20 @@ def cluster_box_chromatograms(boxes,threshold = 0.7,max_mz_diff = 100):
 
 
     return groups,correlations
+
+def peak_group(boxes,seed_box,threshold = 0.7,max_mz_diff = 100):
+    # find all the boxes that link to a single box, with a higher mz
+    # all the ones with a greater mz
+    sub_boxes = list(filter(lambda x: x.mz > seed_box.mz and x.mz < seed_box.mz + max_mz_diff,boxes))
+    # compute correlations
+    correlations = []
+    for box in sub_boxes:
+        co = seed_box.peak_chromatogram.correlation(box.peak_chromatogram)
+        if co > 0:
+            correlations.append((box,co))
+    
+    correlations = set(filter(lambda x: x[1] >= threshold,correlations))
+    correlations.add(seed_box)
+
+    return correlations
     
