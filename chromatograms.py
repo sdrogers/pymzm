@@ -133,10 +133,11 @@ def peak_group(boxes,seed_box,threshold = 0.7,max_mz_diff = 100):
     for box in sub_boxes:
         co = seed_box.peak_chromatogram.correlation(box.peak_chromatogram)
         if co > 0:
-            correlations.append(box)
+            correlations.append((box,co))
     
     correlations = set(filter(lambda x: x[1] >= threshold,correlations))
-    correlations.add(seed_box)
+    peaks = [p for p,c in correlations]
+    peaks.append(seed_box)
 
-    return correlations
+    return peaks
     
