@@ -141,3 +141,21 @@ def peak_group(boxes,seed_box,threshold = 0.7,max_mz_diff = 100):
 
     return peaks
     
+
+def isotope_group(boxes,seed_box,threshold = 0.7,max_iso_step = 10,iso_mz_tol = 0.01):
+    PROTON_MASS = 1.00727645199076
+    max_mz_shift = np.ceil(max_iso_step * PROTON_MASS)
+    peaks = peak_group(boxes,seed_box,threshold = threshold,max_mz_diff = max_mz_shift)
+    # the seed is the last in the peaks list
+    _ = peaks.pop() # removes last element in list
+    accepted = [seed_box]
+    for i in range(1,max_iso_step+1):
+        target_mz = seed_box.mz + i*PROTON_MASS
+        candidates = list(filter(lambda x: x.mz > target_mz - iso_mz_tol and x.mz < target_mz + iso_mz_tol,peaks))
+        if len(candidates) ==  0:
+            return accepted
+        else:
+            candidates.sort(key = lambda x: x.height,reverse = True)
+            accepted.append(candidates[0])
+    return accepted
+    
