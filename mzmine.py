@@ -21,12 +21,12 @@ def pick_peaks(file_list,
         root = et.getroot()
         for child in root:
             # Set the input filename
-            if child.attrib['method'] == 'net.sf.mzmine.modules.rawdatamethods.rawdataimport.RawDataImportModule':
+            if child.attrib['method'].endswith('RawDataImportModule'):
                 for e in child:
                     for g in e:
                         g.text = filename # raw data file name
             # Set the mzTab export filename
-            if child.attrib['method'] == 'net.sf.mzmine.modules.peaklistmethods.io.mztabexport.MzTabExportModule':
+            if child.attrib['method'].endswith('MzTabExportModule'):
                 for e in child:
                     for g in e:
                         tag = g.tag
@@ -37,7 +37,7 @@ def pick_peaks(file_list,
                             g.text = mztab_name
                             if not os.path.exists(mztab_name):
                                 need_to_run = True
-            if child.attrib['method'] == 'net.sf.mzmine.modules.peaklistmethods.io.gnpsexport.GNPSExportAndSubmitModule':
+            if child.attrib['method'].endswith('GNPSExportAndSubmitModule'):
                 for e in child:
                     for g in e:
                         if g.tag == 'current_file':
@@ -45,11 +45,12 @@ def pick_peaks(file_list,
                             g.text = mgf_name
                             if not os.path.exists(mgf_name):
                                 need_to_run = True
-            if child.attrib['method'] == 'net.sf.mzmine.modules.peaklistmethods.io.csvexport.CSVExportModule':
+            if child.attrib['method'].endswith('CSVExportModule'):
                 for e in child:
                     for g in e:
                         if g.tag == 'current_file':
                             csv_box_name = os.path.join(output_dir,filename.split(os.sep)[-1].split('.')[0] + '_box.csv')
+                            print(csv_box_name)
                             g.text = csv_box_name
                             if not os.path.exists(csv_box_name):
                                 need_to_run = True

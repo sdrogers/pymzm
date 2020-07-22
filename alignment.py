@@ -133,6 +133,10 @@ class JoinAligner(object):
                 self.peaksets.append(PeakSet(peak))
         self.files_loaded.append(short_name)
 
+    def filter_peaksets(self,min_peaks_per_peakset):
+        temp = list(filter(lambda x: len(x.peaks)>= min_peaks_per_peakset,self.peaksets))
+        self.peaksets = temp
+
     def to_matrix(self):
         n_peaksets = len(self.peaksets)
         n_files = len(self.files_loaded)
