@@ -10,11 +10,8 @@ class Peak(object): # todo: add MS2 information
         self.intensity = intensity
         self.source_file = source_file
         self.source_id = source_id
-        self.ms2_spectrum = None
-        
-    def add_ms2_spectrum(self,ms2_spectrum):
         self.ms2_spectrum = ms2_spectrum
-    
+        
     def __str__(self):
         return "{} ({}): {},{},{}".format(self.source_file,self.source_id,self.mz,self.rt,self.ms2_spectrum)
 
@@ -24,14 +21,14 @@ class PeakSet(object): # todo add MS2 information
         self.n_peaks = 1
         self.mean_mz = self.peaks[0].mz
         self.mean_rt = self.peaks[0].rt
-        
+
 
     def add_peak(self,peak):
         self.peaks.append(peak)
         self.n_peaks += 1
         self.mean_mz = sum([x.mz for x in self.peaks])/self.n_peaks
         self.mean_rt = sum([x.rt for x in self.peaks])/self.n_peaks
-    
+
     def _actual_mz_tolerance(self,mz,mz_tolerance_absolute,mz_tolerance_ppm):
         ppm_tolerance = mz_tolerance_ppm*self.mean_mz/1e6
         return max(ppm_tolerance,mz_tolerance_absolute)
@@ -69,9 +66,9 @@ class PeakSet(object): # todo add MS2 information
                 if score >= best_score:
                     best_ms2 = p.ms2_spectrum
         return best_ms2
-    
-  
-        
+
+
+
 class JoinAligner(object):
     def __init__(self,mz_tolerance_absolute = 0.01,
                  mz_tolerance_ppm = 10,
@@ -90,6 +87,12 @@ class JoinAligner(object):
         self.rt_column_pos = rt_column_pos
         self.intensity_column_pos = intensity_column_pos
     def add_file(self,input_csv,input_mgf=None):
+        #input_mgf already performed mnet_utilities.load_mgf on it
+        if input_mgf==None:
+            ms2_spectra = None
+        else:
+            ms2_spectra = input_mgf
+
         with open(input_csv,'r') as f:
             reader =  csv.reader(f)
             heads = next(reader)
@@ -98,16 +101,16 @@ class JoinAligner(object):
                 short_name = input_csv.split(os.sep)[-1].split('.')[0].split('_quant')[0]
             except:
                 short_name = input_csv.split(os.sep)[-1]
-                
+
             for line in reader:
                 source_id = int(line[0])
                 peak_mz = float(line[self.mz_column_pos])
                 peak_rt = float(line[self.rt_column_pos])
-                peak_intensity = float(line[self.intensity_column_pos]) 
+                peak_intensity = float(line[self.intensity_column_pos])
 
                 these_peaks.append(Peak(peak_mz,peak_rt,peak_intensity,short_name,source_id))
         self._align(these_peaks,short_name)
-    
+
     def _align(self,these_peaks,short_name):
         if len(self.peaksets) == 0:
             # first file
@@ -171,12 +174,12 @@ class BoxJoinAligner(JoinAligner):
                 short_name = input_csv.split(os.sep)[-1].split('.')[0].split('_quant')[0]
             except:
                 short_name = input_csv.split(os.sep)[-1]
-                
+
             for line in reader:
                 source_id = int(line[0])
                 peak_mz = float(line[self.mz_column_pos])
                 peak_rt = float(line[self.rt_column_pos])
-                peak_intensity = float(line[self.intensity_column_pos]) 
+                peak_intensity = float(line[self.intensity_column_pos])
 
                 these_peaks.append(Peak(peak_mz,peak_rt,peak_intensity,short_name,source_id))
 
@@ -200,8 +203,3 @@ class BoxJoinAligner(JoinAligner):
             peak_id = peak.source_id
             assert peak_id in temp_boxes
             self.peaksets2boxes[peakset] = temp_boxes[peak_id]
-
-
-
-
-                    
